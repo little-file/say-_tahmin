@@ -1,2 +1,2 @@
 **Number-guess**
-***Bu bir deneme amacıylala rust dilini öğrneme amacıyla yaptığım oyunun "Binary" dosyalarıdır.***
+***Bu bir deneme amacıylala rust dilini öğrneme amacıyla yaptığım oyunudur.***
