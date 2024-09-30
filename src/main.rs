@@ -9,18 +9,18 @@ fn main() {
     loop {
         println!("lütfen bir tahmin giriniz: ");
 
-    let mut x = String::new();
+    let mut guess = String::new();
 
     io::stdin()
-        .read_line(&mut x);
-    let x: u32 = match x.trim().parse() { 
+        .read_line(&mut guess);
+    let guess: u32 = match guess.trim().parse() { 
         Ok(num) => num,
         Err(_) => continue,
     };
 
-    println!("tahmin ettiğiniz sayı {x}");
+    println!("tahmin ettiğiniz sayı {guess}");
 
-    match x.cmp(&mtahmin) {
+    match guess.cmp(&mtahmin) {
         Ordering::Less => println!("çok az"),
         Ordering::Greater => println!("çok büyük"),
         Ordering::Equal => {
